@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jQuery.js"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 300px;
+            margin: 50px auto;
+        }
+        li{
+            width: 300px;
+            background-color: rgb(71, 71, 71);
+            border-top: 1px solid #fff;
+            list-style: none;
+            font-size: 16px;
+            text-align: center;
+            line-height: 40px;
+            color: rgb(255, 255, 255);
+        }
+        li p{
+            display:none;
+            width: 300px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #f99;
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            text-decoration: none;
+            cursor: pointer;
+            border-bottom: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <h3>战士</h3>
+                <p>宫本武藏</p>
+                <p>铠</p>
+                <p>吕布</p>
+            </li>
+            <li>
+                <h3>射手</h3>
+                <p>鲁班七号</p>
+                <p>后羿</p>
+            </li>
+            <li>
+                <h3>法师</h3>
+                <p>妲己</p>
+                <p>王昭君</p>
+                <p>小乔</p>
+                <p>张良</p>
+            </li>
+            <li>
+                <h3>刺客</h3>
+                <p>李白</p>
+                <p>元歌</p>
+                <p>露娜</p>
+                <p>娜可露露</p>
+                <p>不知火舞</p>
+            </li>
+            <li>
+                <h3>辅助</h3>
+                <p>蔡文姬</p>
+                <p>庄周</p>
+                <p>孙膑</p>
+            </li>
+        </ul>
+    </div>
+
+
+    <script>
+        $("li").click(function(){
+            $(this).find("p").slideToggle(500);
+            $(this).siblings().find("p").slideUp(500);
+        })
+        $("p").mouseenter(function(){
+            $(this).css({"background-color":"rgb(245,186,186)"});
+        }).mouseleave(function(){
+            $(this).css({"background-color":"#f99"});
+        })
+    </script>
+</body>
+</html>

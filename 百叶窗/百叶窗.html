@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jQuery.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        width: 840px;
+        height: 300px;
+        border: 1px solid #f99;
+        margin: 100px auto;
+        position: relative;
+        overflow: hidden;
+    }
+    li{
+        list-style: none;
+        position: absolute;
+        top: 0;
+    }
+    .img0{
+        left:0px;
+    }
+    .img1{
+        left:120px;
+    }
+    .img2{
+        left:240px;
+    }
+    .img3{
+        left:360px;
+    }
+    .img4{
+        left:480px;
+    }
+    .img5{
+        left:600px;
+    }
+    .img6{
+        left:720px;
+    }
+    li img{
+        width: 600px;
+        height: 300px;
+    }
+</style>
+<body>
+    <div>
+        <ul>
+            <li class="img0"><img src="../img/timg.jpg" alt=""></li>
+            <li class="img1"><img src="../img/timg 2.jpg" alt=""></li>
+            <li class="img2"><img src="../img/timg 3.jpg" alt=""></li>
+            <li class="img3"><img src="../img/timg 4.jpg" alt=""></li>
+            <li class="img4"><img src="../img/timg 5.jpg" alt=""></li>
+            <li class="img5"><img src="../img/timg 6.jpg" alt=""></li>
+            <li class="img6"><img src="../img/timg 7.jpg" alt=""></li>
+        </ul>
+    </div>
+
+
+    <script>
+        $(".img0").mouseenter(function() {
+            $("li").stop(true);
+            $(".img0").animate({left: 0}, 1000)
+            $(".img1").animate({left: 600}, 1000)
+            $(".img2").animate({left: 640}, 1000)
+            $(".img3").animate({left: 680}, 1000)
+            $(".img4").animate({left: 720}, 1000)
+            $(".img5").animate({left: 760}, 1000)
+            $(".img6").animate({left: 800}, 1000)
+        })
+        $(".img1").mouseenter(function() {
+            $("li").stop(true);
+            $(".img0").animate({left: 0}, 1000)
+            $(".img1").animate({left: 40}, 1000)
+            $(".img2").animate({left: 640}, 1000)
+            $(".img3").animate({left: 680}, 1000)
+            $(".img4").animate({left: 720}, 1000)
+            $(".img5").animate({left: 760}, 1000)
+            $(".img6").animate({left: 800}, 1000)
+        })
+        $(".img2").mouseenter(function() {
+            $("li").stop(true);
+            $(".img0").animate({left: 0}, 1000)
+            $(".img1").animate({left: 40}, 1000)
+            $(".img2").animate({left: 80}, 1000)
+            $(".img3").animate({left: 680}, 1000)
+            $(".img4").animate({left: 720}, 1000)
+            $(".img5").animate({left: 760}, 1000)
+            $(".img6").animate({left: 800}, 1000)
+        })
+        $(".img3").mouseenter(function() {
+            $("li").stop(true);
+            $(".img0").animate({left: 0}, 1000)
+            $(".img1").animate({left: 40}, 1000)
+            $(".img2").animate({left: 80}, 1000)
+            $(".img3").animate({left: 120}, 1000)
+            $(".img4").animate({left: 720}, 1000)
+            $(".img5").animate({left: 760}, 1000)
+            $(".img6").animate({left: 800}, 1000)
+        })
+        $(".img4").mouseenter(function() {
+            $("li").stop(true);
+            $(".img0").animate({left: 0}, 1000)
+            $(".img1").animate({left: 40}, 1000)
+            $(".img2").animate({left: 80}, 1000)
+            $(".img3").animate({left: 120}, 1000)
+            $(".img4").animate({left: 160}, 1000)
+            $(".img5").animate({left: 760}, 1000)
+            $(".img6").animate({left: 800}, 1000)
+        })
+        $(".img5").mouseenter(function() {
+            $("li").stop(true);
+            $(".img0").animate({left: 0}, 1000)
+            $(".img1").animate({left: 40}, 1000)
+            $(".img2").animate({left: 80}, 1000)
+            $(".img3").animate({left: 120}, 1000)
+            $(".img4").animate({left: 160}, 1000)
+            $(".img5").animate({left: 200}, 1000)
+            $(".img6").animate({left: 800}, 1000)
+        })
+        $(".img6").mouseenter(function() {
+            $("li").stop(true);
+            $(".img0").animate({left: 0}, 1000)
+            $(".img1").animate({left: 40}, 1000)
+            $(".img2").animate({left: 80}, 1000)
+            $(".img3").animate({left: 120}, 1000)
+            $(".img4").animate({left: 160}, 1000)
+            $(".img5").animate({left: 200}, 1000)
+            $(".img6").animate({left: 240}, 1000)
+        })
+        $("ul").mouseleave(function(){
+            $("li").stop(true);
+            $(".img0").animate({left: 0}, 1000)
+            $(".img1").animate({left: 120}, 1000)
+            $(".img2").animate({left: 240}, 1000)
+            $(".img3").animate({left: 360}, 1000)
+            $(".img4").animate({left: 480}, 1000)
+            $(".img5").animate({left: 600}, 1000)
+            $(".img6").animate({left: 720}, 1000)
+        })
+    </script>
+</body>
+</html>
